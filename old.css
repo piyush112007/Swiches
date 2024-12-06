@@ -1,0 +1,134 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #efabff; /* Light Purple */ /* Match background color */
+}
+.text-box:focus {
+  outline: none; /* Remove the default outline */
+  border: 2px solid #dc6bad; /* Add a custom border */
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eda2f2; /* Light Pink */
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #efabff; /* Light Purple */
+  border-radius: 50%;
+  transition: 0.4s;
+  border: 2px solid #f0f0f0; /* White border to soften edges */
+}
+
+input:checked + .slider {
+  background-color: #dc6bad; /* Pink */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #dc6bad;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider {
+  background-color: #efabff; /* Light Purple */
+}
+
+.slider:before {
+  background-color: #dc6bad; /* Pink */
+}
+
+.text-box {
+  width: 200px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #8c7aa9; /* Purple */
+  border-radius: 5px;
+  background-color: #7192be; /* Blue */
+  color: #f0f0f0; /* Light Gray */
+}
+
+body {
+  background-color: black; /* Light Purple */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 5px; /* Adjusted left position */
+  bottom: 3px; /* Adjusted bottom position */
+  background-color: #efabff; /* Light Purple */
+  border-radius: 50%;
+  transition: 0.4s;
+  border: 2px solid #f0f0f0; /* White border */
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 5px; /* Adjusted left position */
+  bottom: 3px; /* Adjusted bottom position */
+  background-color: #efabff; /* Light Purple */
+  border-radius: 50%;
+  transition: 0.4s;
+  border: 2px solid #f0f0f0; /* White border */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-box {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #8c7aa9; /* Purple */
+  border-radius: 5px;
+  background-color: #7192be; /* Blue */
+  color: #f0f0f0; /* Light Gray */
+  text-align: center; /* Center the text */
+}
+
+.text-box::placeholder {
+  color: #d3f3ee; /* Light Blue */ /* Placeholder color */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Adjust height as needed */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
